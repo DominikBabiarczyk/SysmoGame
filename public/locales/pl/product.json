@@ -1,0 +1,11 @@
+{
+  "product-category": "Category",
+  "product-details": "Product Details",
+  "add-photos": "Add Photos",
+  "product-title": "Title",
+  "keywords": "Keywords (comma separated)",
+  "product-description": "Description",
+  "error:no-data": "No products found matching your criteria",
+  "add-product": "Create Listing",
+  "add-new-product": "Post New Listing"
+}

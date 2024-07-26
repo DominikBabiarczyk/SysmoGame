@@ -1,0 +1,94 @@
+{
+  "yes": "Tak",
+  "no": "Nie",
+  "YES": "TAK",
+  "NO": "NIE",
+  "logout": "Logout",
+  "START": "Start",
+  "SETTINGS": "Settings",
+  "SUPPORT": "Support",
+  "QUIT": "Quit",
+  "welcome": "Welcome",
+  
+  "btn": {
+    "START": "START",
+    "SETTINGS": "USTAWIENIA",
+    "SUPPORT": "POMOC",
+    "QUIT": "WYJŚCIE",
+    "SKIP": "DALEJ",
+    "EASY": "ŁATWY",
+    "MEDIUM":"ŚREDNI",
+    "HARD": "TRUDNY",
+    "PLAY": "GRAJ",
+    "MENU" : "MENU",
+    "RESUME" : "WZNÓW",
+    "NEW GAME": "NOWA GRA",
+    "HOME": "EKRAN GŁÓWNY",
+    "COPY": "KOPIUJ",
+    "SUBMIT": "POTWIERDŹ",
+    "SEND": "WYŚLIJ",
+    "NEXT LEVEL": "NASTĘPNY POZIOM",
+    "PLAY AGAIN": "GRAJ PONOWNIE",
+    "HOME PAGE":"STRONA GŁÓWNA",
+    "SHARE": "UDOSTĘPNIJ",
+    "TRY AGAIN": "SPRÓBUJ PONOWNIE",
+
+    "continue": "Continnue",
+    "login": "Login",
+    "write": "Write",
+    "send": "Send",
+    "publish": "Publish",
+    "search": "Search",
+    "back": "Back "
+  },
+  "title":{
+    "SELECT DIFFICULTY LEVEL": "WYBIERZ POZIOM TRUDNOŚCI",
+    "MENU": "MENU",
+    "GAME OVER" : "KONIEC GRY",
+    "CONGRATS!": "GRATULACJE!",
+    "COMPLETE!": "UKOŃCZONY",
+    "LEVEL": "POZIOM",
+    "Code sended": "Kod został wysłany",
+    "INVALID E-MAIL": "NIEPOPRAWNY EMAIL",
+    "SETTINGS": "USTAWIENIA",
+    "SUPPORT": "POMOC",
+    "Email sended!": "Email wysłany!",
+    "TRY AGAIN": "SPRÓBUJ PONOWNIE"
+  },
+
+  "descriptions":{
+    "5 HOURS OF PROGRAMMING": "5 GODZIN PROGRAMOWANIA",
+    "YOU WON": "WYGRAŁEŚ",
+    "Do you want to receive the code by email?": "Chcesz dostać, email z kodem?",
+    "Please enter your e-mail": "Wprowadz swój emial:",
+    "LANGUAGE": "JĘZYK",
+    "MUSIC": "MUZYKA",
+    "SFX": "SFX",
+    "Message":"Wiadomość:"
+  },
+
+  "tutorial":{
+    "Level EASY" : "POZIOM ŁATWY",
+    "The player must match pairs of appropriate pictures" : "Gracz musi połączyć pary, z poprawnymi obrazkami",
+    "Level MEDIUM" : "POZIOM ŚREDNI",
+    "It's about connecting a picture with a word that matches it" : "Chodzi o połączenie obrazu ze słowem, które do niego pasuje",
+    "Level HARD" : "POZIOM TRUDNY",
+    "The player must match key words with an adequate definition" : "Gracz musi połączyć, słowo klucz, z adekwatną definicją"
+  },
+
+  "or": "Or",
+  "errors": {
+    "empty_message": "Message cannot be empty"
+  },
+  "field-max-error": "Max field length is {{length}}",
+  "chat-deleted": "Chat deleted",
+  "close": "Close",
+  "dates": {
+    "justNow": "Just Now"
+  },
+  "yesterday": "Yesterday",
+  "link-copied": "Link copied to clipboard",
+  "could-not-copy-link": "There was a problem copying content to the clipboard",
+  "photo-validation:size": "The image you provided is too large!",
+  "photo-validation:type": "Wrong file type."
+}

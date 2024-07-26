@@ -1,0 +1,11 @@
+{
+  "product-category": "Kategorie",
+  "product-details": "Produktdetails",
+  "add-photos": "Fotos hinzufügen",
+  "product-title": "Titel",
+  "keywords": "Schlüsselwörter (nach Komma eingeben)",
+  "product-description": "Beschreibung",
+  "error:no-data": "Es wurden keine Produkte gefunden, die Ihren Kriterien entsprechen",
+  "add-product": "Anzeige erstellen",
+  "add-new-product": "Neue Anzeige aufgeben"
+}

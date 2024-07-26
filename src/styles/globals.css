@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Laxend:wght@400;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+
+@layer components{
+  .font-menuOptions800{
+    @apply font-publicSans text-xl font-extrabold
+  }
+
+  .font-menuOptions700{
+    @apply font-publicSans text-xl font-bold
+  }
+
+  .font-menuOptions600{
+    @apply font-publicSans text-xl font-semibold
+  }
+
+  .font-tutorial500{
+    @apply font-laxend font-medium text-3xl
+  }
+
+  .font-tutorial400{
+    @apply font-laxend font-normal text-lg
+  }
+
+  .font-descSend700{
+    @apply font-laxend font-bold text-lg
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: white;
+}
+input:focus {
+  outline: none;
+}
+input::placeholder {
+  color: #2f354c;
+}
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+.basic-multi-select {
+  border-bottom-right-radius: 50px;
+}
+
+select:focus {
+  outline: none;
+}
+
+.css-1jqq78o-placeholder,
+.css-1xc3v61-indicatorContainer {
+  opacity: 1 !important;
+  color: rgb(46, 46, 46) !important;
+}
+.css-1xc3v61-indicatorContainer {
+  margin-right: 5px;
+}
+
+.css-15kynmc-control:hover {
+  border-color: #979797 !important;
+}
+.css-15kynmc-control {
+  box-shadow: none !important;
+  border-color: #979797 !important;
+}
+
+.select__indicator-separator {
+  display: none !important;
+}
+
+textarea:focus {
+  outline: none;
+}
+textarea {
+  border-radius: 15px;
+  border-bottom-right-radius: 55px;
+  resize: none;
+  min-height: 70px;
+}
+
+.infinite-scroll-component {
+  overflow: hidden !important;
+}
+
+::-webkit-scrollbar {
+  width: 3.5px;
+  height: 3.5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #112baf;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+#message {
+  border-radius: 20px;
+  min-width: 500px;
+  max-width: unset !important;
+}
+
+@media screen and (max-width: 1000px) {
+  #message {
+    min-width: 350px;
+  }
+}
+@media screen and (max-width: 600px) {
+  #message {
+    min-width: 150px;
+  }
+}

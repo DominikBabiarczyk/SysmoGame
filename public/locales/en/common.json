@@ -1,0 +1,90 @@
+{
+  "yes": "Yes",
+  "no": "No",
+  "logout": "Logout",
+
+  "welcome": "Welcome",
+  
+  "btn": {
+    "START": "START",
+    "SETTINGS": "SETTINGS",
+    "SUPPORT": "SUPPORT",
+    "QUIT": "QUIT",
+    "SKIP" : "SKIP",
+    "EASY": "EASY",
+    "MEDIUM":"MEDIUM",
+    "HARD": "HARD",
+    "PLAY": "PLAY",
+    "MENU" : "MENU",
+    "RESUME" : "RESUME",
+    "NEW GAME": "NEW GAME",
+    "HOME": "HOME",
+    "NEXT LEVEL": "NEXT LEVEL",
+    "PLAY AGAIN" : "PLAY AGAIN",
+    "HOME PAGE": "HOME PAGE",
+    "COPY": "COPY",
+    "SUBMIT": "SUBMIT",
+    "SEND": "SEND",
+    "SHARE": "SHARE",
+    "continue": "Continnue",
+    "login": "Login",
+    "write": "Write",
+    "send": "Send",
+    "publish": "Publish",
+    "search": "Search",
+    "back": "Back ",
+    "TRY AGAIN": "TRY AGAIN"
+  },
+
+  "title":{
+    "SELECT DIFFICULTY LEVEL": "SELECT DIFFICULTY LEVEL",
+    "MENU": "MENU",
+    "GAME OVER" : "GAME OVER",
+    "CONGRATS!": "CONGRATS!",
+    "LEVEL": "LEVEL",
+    "COMPLETE!": "COMPLETE!",
+    "Code sended": "Code sended",
+    "INVALID E-MAIL": "INVALID E-MAIL",
+    "TRY AGAIN": "TRY AGAIN",
+    "SETTINGS": "SETTINGS",
+    "SUPPORT": "SUPPORT",
+    "Email sended!": "Email sended!" 
+  },
+
+  "descriptions":{
+    "YOU WON": "YOU WON",
+    "5 HOURS OF PROGRAMMING": "5 HOURS OF PROGRAMMING",
+    "Do you want to receive the code by email?": "Do you want to receive the code by email?",
+    "Please enter your e-mail": "Please enter your e-mail:",
+    "LANGUAGE": "LANGUAGE",
+    "MUSIC": "MUSIC",
+    "SFX": "SFX",
+    "Message":"Message" 
+    
+  },
+
+  "tutorial":{
+    "Level EASY" : "Level EASY",
+    "The player must match pairs of appropriate pictures" : "The player must match pairs of appropriate pictures",
+    "Level MEDIUM" : "Level MEDIUM",
+    "It's about connecting a picture with a word that matches it" : "It's about connecting a picture with a word that matches it",
+    "Level HARD" : "Level HARD",
+    "The player must match key words with an adequate definition" : "The player must match key words with an adequate definition"
+  },
+
+  "or": "Or",
+  "errors": {
+    "empty_message": "Message cannot be empty"
+  },
+  "field-max-error": "Max field length is {{length}}",
+  "chat-deleted": "Chat deleted",
+  "close": "Close",
+  "dates": {
+    "justNow": "Just Now"
+  },
+  "yesterday": "Yesterday",
+  "link-copied": "Link copied to clipboard",
+  "could-not-copy-link": "There was a problem copying content to the clipboard",
+  "photo-validation:size": "The image you provided is too large!",
+  "photo-validation:type": "Wrong file type."
+}

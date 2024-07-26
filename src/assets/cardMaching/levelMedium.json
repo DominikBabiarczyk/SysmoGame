@@ -1,0 +1,129 @@
+{
+
+    "pl": {
+      "images": [
+        {
+          "id": "AI",
+          "src": "/images/cards/frontPicture/card1.png",
+          "name": "AI",
+          "description": "Umożliwia komputerom wykonywanie zadań wymagających ludzkiej inteligencji"
+        },
+        {
+          "id": "Kontroler",
+          "src": "/images/cards/frontPicture/card2.png",
+          "name": "Kontroler",
+          "description": "Urządzenie do kontrolowania ruchu w grach komputerowych"
+        },
+        {
+          "id": "Laptop",
+          "src": "/images/cards/frontPicture/card3.png",
+          "name": "Laptop",
+          "description": "Przenośny komputer"
+        },
+        {
+          "id": "Kod",
+          "src": "/images/cards/frontPicture/card4.png",
+          "name": "Kod",
+          "description": "Zbiór instrukcji napisanych w języku programowania"
+        },
+        {
+          "id": "Procesor",
+          "src": "/images/cards/frontPicture/card5.png",
+          "name": "Procesor",
+          "description": "Podzespół komputera, wykonujący obliczenia"
+        },
+        {
+          "id": "StronaInternetowa",
+          "src": "/images/cards/frontPicture/card6.png",
+          "name": "Strona Internetowa",
+          "description": "Dokument dostępny w sieci, wyświetlany przez przeglądarkę"
+        },
+        {
+          "id": "Wirus",
+          "src": "/images/cards/frontPicture/card7.png",
+          "name": "Wirus",
+          "description": "Złośliwy program komputerowy"
+        },
+        {
+          "id": "Myszka",
+          "src": "/images/cards/frontPicture/card8.png",
+          "name": "Myszka",
+          "description": "Podzespół komputera, słóżący do operowania kursorem"
+        },
+        {
+          "id": "Pendrive",
+          "src": "/images/cards/frontPicture/card9.png",
+          "name": "Pendrive",
+          "description": "Małe urządzenie pamięci przenośnej"
+        },
+        {
+          "id": "Kursor",
+          "src": "/images/cards/frontPicture/card10.png",
+          "name": "Kursor",
+          "description": "Ruchomy znacznik wyświetlany na wyświetlaczu"
+        },
+        {
+          "id": "WIFI",
+          "src": "/images/cards/frontPicture/card11.png",
+          "name": "WIFI",
+          "description": "Radiowa siec bezprzewodowa, udostępniająca internet w domu"
+        },
+        {
+          "id": "MAIL",
+          "src": "/images/cards/frontPicture/card12.png",
+          "name": "MAIL",
+          "description": "List internetowy"
+        },
+        {
+          "id": "ROUTER",
+          "src": "/images/cards/frontPicture/card13.png",
+          "name": "ROUTER",
+          "description": "Urządzenie sieciowe, które umożliwia łączność z internetem urządzeniom"
+        },
+        {
+          "id": "iCLOUD",
+          "src": "/images/cards/frontPicture/card14.png",
+          "name": "iCLOUD",
+          "description": "To sieć serwerów, na których użytkownicy mogą przechowywać dane"
+        },
+        {
+          "id": "BIT",
+          "src": "/images/cards/frontPicture/card15.png",
+          "name": "BIT",
+          "description": "Najmniejsza jednostka informacji w komputerze"
+        },
+        {
+          "id": "ERROR 404",
+          "src": "/images/cards/frontPicture/card16.png",
+          "name": "ERROR 404",
+          "description": "Błąd, który oznacza, że serwer nie może odnaleźć żądanej strony"
+        },
+        {
+          "id": "HTML",
+          "src": "/images/cards/frontPicture/card17.png",
+          "name": "HTML",
+          "description": "Język znaczników, który umożliwia strukturyzację i formatowanie treści na stronach internetowych"
+        },
+        {
+          "id": "PLUGIN",
+          "src": "/images/cards/frontPicture/card18.png",
+          "name": "PLUGIN",
+          "description": "Element oprogramowania, który służy do rozszerzenia funkcjonalności danej aplikacji lub systemu"
+        },
+        {
+          "id": "SETTINGS",
+          "src": "/images/cards/frontPicture/card19.png",
+          "name": "SETTINGS",
+          "description": ""
+        },
+        {
+          "id": "INTERNET",
+          "src": "/images/cards/frontPicture/card20.png",
+          "name": "INTERNET",
+          "description": "Ogólnoświatowa sieć wymiany danych"
+        }
+
+      ]
+    }
+  }
+  

@@ -1,0 +1,29 @@
+{
+  "yes": "Ja",
+  "no": "Nein",
+  "logout": "Ausloggen",
+  "btn": {
+    "continue": "Weiter",
+    "login": "Log in",
+    "write": "Schreiben",
+    "send": "Senden",
+    "publish": "Veröffentlichen",
+    "search": "Suchen",
+    "back": "Zurück"
+  },
+  "or": "Oder",
+  "errors": {
+    "empty_message": "Die Nachricht darf nicht leer sein"
+  },
+  "field-max-error": "Die maximale Feldlänge beträgt {{length}}",
+  "chat-deleted": "Chat erfolgreich gelöscht",
+  "close": "Schließen",
+  "dates": {
+    "justNow": "gerade eben"
+  },
+  "yesterday": "Gestern",
+  "link-copied": "Link in die Zwischenablage kopiert",
+  "could-not-copy-link": "Beim Kopieren von Inhalten in die Zwischenablage sind Probleme aufgetreten",
+  "photo-validation:size": "Das von Ihnen bereitgestellte Bild ist zu groß!",
+  "photo-validation:type": "Falscher Dateityp."
+}
