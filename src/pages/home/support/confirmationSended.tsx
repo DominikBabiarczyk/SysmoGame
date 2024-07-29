@@ -26,11 +26,11 @@ const Confirmations = () => {
 
         <div className='flex flex-col justify-center items-center p-20 space-y-6'>
 
-          <button onClick={backToHome} className="bg-orange-500 text-black font-menuOptions700 py-4 px-8 rounded-full w-60">
+          <button onClick={backToHome} className="bg-orange-500 text-black font-menuOptions700 py-4 px-8 rounded-full w-full">
             {t("btn.HOME PAGE")}
           </button>
 
-          <button onClick={quitToSendMessage} className="bg-orange-500 text-black font-menuOptions700 py-4 px-8 rounded-full w-60">
+          <button onClick={quitToSendMessage} className="bg-orange-500 text-black font-menuOptions700 py-4 px-8 rounded-full w-full">
             {t("btn.QUIT")}
           </button>
 

@@ -83,7 +83,7 @@ const Game: React.FC = () => {
   }
 
   return (
-    <div className="bg-orange-500 h-screen flex flex-col items-center">
+    <div className="bg-orange-500 flex flex-col items-center min-h-screen pb-10">
       <div className="flex justify-between w-full pt-5 pl-5 pr-5">
         <div className="bg-black text-white p-6 rounded-full text-3xl flex items-center justify-center w-40 h-40">
           {new Date(time * 1000).toISOString().substr(14, 5)}
@@ -101,7 +101,7 @@ const Game: React.FC = () => {
               )}
             >
               {card.flipped || card.matched ? (
-                card.type === 'image' ? <img src={card.content} alt="card" className="w-fit h-fit object-cover rounded-lg" /> : <div className={`w-full h-full font-bold text-center text-black flex justify-center items-center ${card.type === 'name' ? "text-base" : "text-xs"}`}>{card.content}</div>
+                card.type === 'image' ? <img src={card.content} alt="card" className="w-fit h-fit object-cover rounded-lg" /> : <div className={`w-full h-full font-bold text-center text-black flex justify-center items-center ${card.type === 'name' ? "text-sm" : "text-xxs"}`}>{card.content}</div>
               ) : (
                 <img src='/images/kardBackLogo.png' alt="card back" className="w-fit h-fit object-cover rounded-lg" />
               )}

@@ -27,16 +27,17 @@ const ColorSlider: React.FC<SliderProps> = ({ value, onChange }) => {
   };
 
   return (
-    <div style={{ ...sliderContainerStyle, ...backgroundStyle }}>
+    <div style={{ ...sliderContainerStyle, ...backgroundStyle }} className="cursor-pointer">
       <input
         type="range"
-        min="0" // Minimum value set to 5
-        max="100" // Maximum value set to 95
+        min="0" // Minimum value set to 0
+        max="100" // Maximum value set to 100
         value={value}
         onChange={handleSliderChange}
         style={styles.slider}
+        className="cursor-pointer"
       />
-      <div style={indicatorStyle} />
+      <div style={indicatorStyle} className="cursor-pointer" />
     </div>
   );
 };
@@ -46,7 +47,6 @@ const styles = {
     width: 'calc(100% - 20px)', // Adjusted width to account for padding
     height: '20px',
     position: 'relative' as 'relative',
-    cursor: 'pointer',
     borderRadius: '10px',
     overflow: 'visible',
     boxSizing: 'border-box' as 'border-box',

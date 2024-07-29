@@ -9,7 +9,12 @@ module.exports = {
       fontFamily:{
         publicSans: ['Public Sans', 'sans-serif'],
         laxend: ['Laxend', 'sans-serif']
-      }
+      },
+
+      fontSize: {
+        'xxs': '0.625rem', // Dodaj własny rozmiar tekstu (10px)
+        // Możesz dodać inne niestandardowe rozmiary
+      },
     },
 
   },

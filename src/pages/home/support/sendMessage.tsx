@@ -33,6 +33,9 @@ const SentMessage = () => {
 
     const handleSendButton = () => {
         if (mail === ''  || message === '') {
+            if (mail != '' && !isCorrectFormat(mail)){
+                setInformationStatus("invalidMail");
+            }
             setInformationStatus("tryAgain");
         } else if(isCorrectFormat(mail)) {
             router.push("/home/support/confirmationSended");
@@ -62,7 +65,7 @@ const SentMessage = () => {
                             <input
                                 type="email"
                                 id="email"
-                                className={`p-2 pl-3 pr-10 rounded-2xl w-full ${(informationStatus === 'invalidMail') ? 'border-2 border-red-600 bg-red-200' : 'border-2 border-black'}`}
+                                className={`p-2 pl-3 pr-10 rounded-2xl w-full ${(informationStatus === 'invalidMail') || (informationStatus ==="tryAgain" && mail=="") ? 'border-2 border-red-600 bg-red-200' : 'border-2 border-black'}`}
                                 value={mail}
                                 onChange={handleEmailChange}
                             />
@@ -77,7 +80,7 @@ const SentMessage = () => {
                         <label htmlFor="message" className="font-menuOptions600 ">{t("descriptions.Message")}</label>
                         <textarea
                             id="message"
-                            className="p-2 h-36 rounded-2xl border-2 border-black w-full resize-none"
+                            className={`p-2 h-36 rounded-2xl border-2 border-black w-full resize-none ${(informationStatus != '' && message=="") ? 'border-2 border-red-600 bg-red-200' : 'border-2 border-black'}`}
                             value={message}
                             onChange={handleMessageChange}
                         />
