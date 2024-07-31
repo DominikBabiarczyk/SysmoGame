@@ -2,7 +2,7 @@ import { useRouter } from 'next/router';
 import BackArrow from "@src/layouts/GraSysmo/BackArrow";
 import ColorSlider from '@src/components/slider';
 import { useAppContext } from '@src/context/completedTutorial';
-import SettingsV2 from './settingsBox';
+import SettingsV2 from '../../components/settingsBox';
 import { useTranslation } from 'react-i18next';
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 

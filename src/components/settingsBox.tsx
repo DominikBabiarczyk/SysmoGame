@@ -1,9 +1,7 @@
 import { useRouter } from 'next/router';
-import BackArrow from "@src/layouts/GraSysmo/BackArrow";
 import ColorSlider from '@src/components/slider';
 import { useAppContext } from '@src/context/completedTutorial';
 import { useTranslation } from 'react-i18next';
-import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 
 export const SettingsV2 = () => {
   const router = useRouter();
@@ -49,12 +47,5 @@ export const SettingsV2 = () => {
   );
 };
 
-export async function getStaticProps({ locale }: any) {
-  return {
-    props: {
-      ...(await serverSideTranslations(locale, ["auth", "common"])),
-    },
-  };
-}
 
 export default SettingsV2;

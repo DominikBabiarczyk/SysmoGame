@@ -3,12 +3,12 @@ import { useRouter, NextRouter } from 'next/router';
 import Menu from "@src/pages/game/menu";
 import { getSound } from '@src/utils/getSounds';
 import { useAppContext } from '@src/context/completedTutorial';
-import SettingsV2 from '../home/settingsBox';
 import { useGameEffects } from './useEffects/useGameEffects';
 import { flipCard } from './flipCard'; // Importowanie funkcji flipCard
 import { Card } from './useEffects/types'; // Importowanie typu Card
 import { useTranslation } from 'react-i18next';
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
+import SettingsInMenu from './settingsInMenu';
 
 const Game: React.FC = () => {
   const { t } = useTranslation();
@@ -22,19 +22,18 @@ const Game: React.FC = () => {
   const [time, setTime] = useState<number>(() => {
     switch (difficulty) {
       case 'easy':
-        return 60; // Przykładowy czas dla poziomu łatwego
+        return 60; 
       case 'medium':
-        return 90; // Przykładowy czas dla poziomu średniego
+        return 90; 
       case 'hard':
-        return 120; // Przykładowy czas dla poziomu trudnego
+        return 120; 
       default:
-        return 66; // Domyślny czas
+        return 66; 
     }
   });
 
   const [cards, setCards] = useState<Card[]>([]);
   const [flippedCards, setFlippedCards] = useState<string[]>([]);
-  const [gameWon, setGameWon] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
   const timerRef = useRef<NodeJS.Timeout | null>(null);
 
@@ -62,7 +61,6 @@ const Game: React.FC = () => {
 
   const handleMenu = () => {
     setMenuOpen(true);
-    //clearInterval(timerRef.current!);
   };
 
   const handleResume = () => {
@@ -70,12 +68,10 @@ const Game: React.FC = () => {
   };
 
   function isCardOneOfTwoFlippedAndUnmatched(cards: Card[], cardId: string): boolean {
-    // Find all flipped but unmatched cards
     const flippedUnmatchedCards = cards.filter(card => card.flipped && !card.matched);
   
-    // Check if there are exactly two such cards
     if (flippedUnmatchedCards.length === 2) {
-      // Check if one of these cards has the given id
+
       return flippedUnmatchedCards.some(card => card.id === cardId);
     }
   
@@ -97,7 +93,7 @@ const Game: React.FC = () => {
               key={card.id}
               className={`w-24 h-36 bg-white border-4 ${card.matched ? 'border-green-500' : isCardOneOfTwoFlippedAndUnmatched(cards, card.id) ? ('border-red-500') : 'border-black'} rounded-lg flex items-center justify-center cursor-pointer`}
               onClick={() => flipCard(
-                card.id, cards, setCards, flippedCards, setFlippedCards, setGameWon, difficulty, audioRef, sfxVolume, router
+                card.id, cards, setCards, flippedCards, setFlippedCards, difficulty, audioRef, sfxVolume, router
               )}
             >
               {card.flipped || card.matched ? (
@@ -110,22 +106,10 @@ const Game: React.FC = () => {
         </div>
         {menuOpen &&
           (settingsWindow ?
-            (<div className="flex justify-center items-center absolute top-0 left-0 w-full h-full bg-black bg-opacity-80 text-white">
-              <div className="relative w-full h-full flex flex-col text-white justify-center items-center">
-                <button
-                  className="absolute top-4 left-4 bg-orange-500 hover:bg-orange-600 text-white font-bold py-3 px-3 rounded-xl"
-                  onClick={() => setSettingsWindow(false)}
-                >
-                  <img src="/images/backArrow.png" className="pr-1" />
-                </button>
-                <SettingsV2 />
-              </div>
-            </div>
+            (<SettingsInMenu setSettingsWindow={setSettingsWindow}></SettingsInMenu>
             ) : (
-              <div className="absolute top-0 left-0 w-full h-full flex items-center justify-center bg-black bg-opacity-75 text-white text-4xl">
                 <Menu onResume={handleResume} setSettingsWindow={setSettingsWindow} pausedTime={time} />
-              </div>))
-        }
+              ))}
       </div>
 
       <audio ref={audioRef} />

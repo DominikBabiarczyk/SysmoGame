@@ -9,7 +9,6 @@ export const flipCard = (
   setCards: (cards: Card[]) => void,
   flippedCards: string[],
   setFlippedCards: (flippedCards: string[]) => void,
-  setGameWon: (gameWon: boolean) => void,
   difficulty: string | string[] | undefined,
   audioRef: React.RefObject<HTMLAudioElement>,
   sfxVolume: number,
@@ -67,7 +66,6 @@ export const flipCard = (
   }
 
   if (newSetCards.every(card => card.flipped)) {
-    setGameWon(true);
     setTimeout(() => {
       router.push({
         pathname: "/afterGame/win/passingCode",
