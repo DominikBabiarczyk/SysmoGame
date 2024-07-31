@@ -1,5 +1,5 @@
 import { NextRouter } from 'next/router';
-import { Card } from './useEffects/types';
+import { Card } from '../useEffects/types';
 import { EqualsId } from './equalsId';
 import { getSound } from '@src/utils/getSounds';
 

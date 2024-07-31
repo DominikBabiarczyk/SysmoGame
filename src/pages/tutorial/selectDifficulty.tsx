@@ -1,8 +1,8 @@
 import { useRouter } from 'next/router';
 import BackArrow from "@src/layouts/GraSysmo/BackArrow";
 import { useAppContext } from '@src/context/completedTutorial';
-import { useState, useTransition } from 'react';
-import { useTranslation, UseTranslation } from 'next-i18next';
+import { useState} from 'react';
+import { useTranslation} from 'next-i18next';
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 
 const LevelHard = () => {
@@ -21,7 +21,7 @@ const LevelHard = () => {
   };
 
   const hadnleBackArrow = () => {
-    router.push("/home/Home");
+    router.push("/home");
   };
 
   const handleBack = () => {
@@ -40,13 +40,13 @@ const LevelHard = () => {
         </div>
         
         <div className="space-y-4 flex flex-col pt-10 pb-10">
-          <button onClick={() => setDifficultyLevel("easy")} className={`text-black hover:bg-gray-500 ${choseLevel === "easy" ? 'bg-gray-500' : 'bg-white'} font-tutorial500 text-base py-2 px-10 rounded-full border-2 border-orange-500`}>
+          <button onClick={() => setDifficultyLevel("easy")} className={`text-black hover:bg-gray-500 ${choseLevel === "easy" ? 'bg-gray-500' : 'bg-white'} font-tutorial500 font-semibold text-base py-2 px-10 rounded-full border-2 border-orange-500`}>
             {t("btn.EASY")}
           </button>
-          <button onClick={() => setDifficultyLevel("medium")} className={`text-black hover:bg-gray-500 ${choseLevel === "medium" ? 'bg-gray-500' : 'bg-white'} font-tutorial500 text-base py-2 px-10 rounded-full border-2 border-orange-500`}>
+          <button onClick={() => setDifficultyLevel("medium")} className={`text-black hover:bg-gray-500 ${choseLevel === "medium" ? 'bg-gray-500' : 'bg-white'} font-tutorial500 font-semibold  text-base py-2 px-10 rounded-full border-2 border-orange-500`}>
             {t("btn.MEDIUM")}
           </button>
-          <button onClick={() => setDifficultyLevel("hard")} className={`text-black hover:bg-gray-500 ${choseLevel === "hard" ? 'bg-gray-500' : 'bg-white'} font-tutorial500 text-base py-2 px-10 rounded-full border-2 border-orange-500`}>
+          <button onClick={() => setDifficultyLevel("hard")} className={`text-black hover:bg-gray-500 ${choseLevel === "hard" ? 'bg-gray-500' : 'bg-white'} font-tutorial500 font-semibold  text-base py-2 px-10 rounded-full border-2 border-orange-500`}>
             {t("btn.HARD")}
           </button>
         </div>

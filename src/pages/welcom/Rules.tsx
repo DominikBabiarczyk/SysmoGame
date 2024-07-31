@@ -13,7 +13,7 @@ const handleCheckBoxChange = () =>{
 
 const handleonClickNextButton = () => {
     if(isChecked){
-        router.push("/home/Home");
+        router.push("/home");
     }else{
         alert('Proszę zaakceprować zasady , aby kontynuować');
     }

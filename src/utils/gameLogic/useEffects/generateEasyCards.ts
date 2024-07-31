@@ -1,5 +1,5 @@
-import { generatePairs } from '../getRandomPairs';
-import { generateRandomNumbers } from '../getNumberCard';
+import { generatePairs } from '../functions/getRandomPairs';
+import { generateRandomNumbers } from '../functions/getNumberCard';
 import { Card } from './types';
 
 export const generateEasyCards = (): Card[] => {

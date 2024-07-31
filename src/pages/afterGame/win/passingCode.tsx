@@ -1,7 +1,7 @@
 import React from 'react';
 import MainContainer from "@src/layouts/GraSysmo/MainContainer";
 import { useRouter } from 'next/router';
-import {generateRandomCode} from "@src/pages/afterGame/win/generateCode"
+import {generateRandomCode} from "@src/utils/afterGameHelpers/generateCode"
 import { useEffect, useState } from 'react';
 import { useRef } from 'react';
 import { getSound } from '@src/utils/getSounds';

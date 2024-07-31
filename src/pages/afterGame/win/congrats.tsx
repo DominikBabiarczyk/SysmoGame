@@ -30,7 +30,7 @@ const CongratsPage: React.FC = () => {
     }
 
     const handleHome = () => {
-        router.push("/home/Home");
+        router.push("/home");
     }
 
     const newGamee = () => {

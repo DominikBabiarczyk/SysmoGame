@@ -3,9 +3,9 @@ import { useRouter, NextRouter } from 'next/router';
 import Menu from "@src/pages/game/menu";
 import { getSound } from '@src/utils/getSounds';
 import { useAppContext } from '@src/context/completedTutorial';
-import { useGameEffects } from './useEffects/useGameEffects';
-import { flipCard } from './flipCard'; // Importowanie funkcji flipCard
-import { Card } from './useEffects/types'; // Importowanie typu Card
+import { useGameEffects } from '../../utils/gameLogic/useEffects/useGameEffects';
+import { flipCard } from '../../utils/gameLogic/functions/flipCard'; // Importowanie funkcji flipCard
+import { Card } from '../../utils/gameLogic/useEffects/types'; // Importowanie typu Card
 import { useTranslation } from 'react-i18next';
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 import SettingsInMenu from './settingsInMenu';

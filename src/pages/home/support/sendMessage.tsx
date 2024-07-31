@@ -15,8 +15,6 @@ const SentMessage = () => {
         setEmail(e.target.value);
     };
 
-    
-
     const handleClearInput = () => {
         setEmail("");
         setInformationStatus("");

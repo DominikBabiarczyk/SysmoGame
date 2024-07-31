@@ -22,7 +22,7 @@ const Menu: React.FC<MenuProps> = ({ onResume, setSettingsWindow, pausedTime}) =
     }
     
     const handleGoToHome = () => {
-        router.push("/home/Home");
+        router.push("/home");
     }
     
     const handleGoToSettings = () => {

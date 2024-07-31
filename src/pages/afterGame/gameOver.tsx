@@ -28,7 +28,7 @@ const GameOver: React.FC = () => {
 
     
     const goToHome = () => {
-        router.push("/home/Home",)
+        router.push("/home",)
     }
 
     const newGame = () => {

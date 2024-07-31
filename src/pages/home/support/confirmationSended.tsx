@@ -11,7 +11,7 @@ const Confirmations = () => {
   const { t } = useTranslation();
 
   const backToHome = () => {
-    router.push("/home/Home");
+    router.push("/home");
   }
 
   const quitToSendMessage = () => {
